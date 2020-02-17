@@ -6,15 +6,15 @@
 	font-size: 12px;
 	p {
 		display: inline-block;
-	}
-	a {
-		font-weight: 700;
-		color: $buttonColor;
-	}
-	span {
-		cursor: pointer;
-		font-weight: 700;
-		color: $buttonColor;
+		a {
+			font-weight: 700;
+			color: $buttonColor;
+		}
+		span {
+			cursor: pointer;
+			font-weight: 700;
+			color: $buttonColor;
+		}
 	}
 }
 
@@ -23,10 +23,82 @@
 	justify-content: space-between;
 	height: 35px;
 	margin: 20px 0;
+	font-size: 14px;
+	font-weight: 700;
+	.nav-left {
+		img {
+			width: 110px;
+			height: 35px;
+		}
+	}
 	.nav-right {
 		ul {
 			@include flex-init;
 			list-style: none;
+			li {
+				margin: 10px;
+				a {
+					transition: color 1s;
+				}
+				&:hover a {
+					color: $buttonColor;
+				}
+			}
+			.solutions {
+				a {
+					@include flex-init;
+					i {
+						margin: 0 0 0 5px;
+					}
+				}
+			}
+			.sign-up {
+				margin: 10px 0 10px 10px;
+				a {
+					transition: background-color 1.5s;
+					transition: color 1.5s;
+				}
+				&:hover a {
+					background-color: $buttonColor;
+					color: #ffffff;
+				}
+				a {
+					@include flex-init;
+					@include button-init;
+					background-color: #ffffff;
+					color: $buttonColor;
+					img {
+						width: 18px;
+						height: 18px;
+						margin: 0 5px 0 0;
+					}
+				}
+			}
+			.hamburger {
+				display: none;
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+.line {
+	width: 100%;
+	height: 2px;
+	background-color: #bdb5af;
+}
+
+@media screen and (max-width: 768px) {
+	.nav-bar {
+		.nav-right {
+			ul {
+				li {
+					display: none;
+				}
+				.hamburger {
+					display: inline-block;
+				}
+			}
 		}
 	}
 }

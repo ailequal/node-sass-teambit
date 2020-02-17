@@ -6,14 +6,14 @@
 
 body {
   min-width: 320px;
-  background-color: yellow;
   font-family: sans-serif;
   font-size: 16px;
+  color: #58402c;
 }
 
 a {
+  color: #58402c;
   text-decoration: none;
-  color: black;
 }
 
 .container {
@@ -23,7 +23,6 @@ a {
 }
 
 .container-full {
-  max-width: 1200px;
   width: 100%;
 }
 
@@ -38,12 +37,12 @@ a {
   display: inline-block;
 }
 
-.privacy-cookies a {
+.privacy-cookies p a {
   font-weight: 700;
   color: #30488f;
 }
 
-.privacy-cookies span {
+.privacy-cookies p span {
   cursor: pointer;
   font-weight: 700;
   color: #30488f;
@@ -55,6 +54,13 @@ a {
   justify-content: space-between;
   height: 35px;
   margin: 20px 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-bar .nav-left img {
+  width: 110px;
+  height: 35px;
 }
 
 .nav-bar .nav-right ul {
@@ -63,7 +69,82 @@ a {
   list-style: none;
 }
 
-main {
+.nav-bar .nav-right ul li {
+  margin: 10px;
+}
+
+.nav-bar .nav-right ul li a {
+  transition: color 1s;
+}
+
+.nav-bar .nav-right ul li:hover a {
+  color: #30488f;
+}
+
+.nav-bar .nav-right ul .solutions a {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .nav-right ul .solutions a i {
+  margin: 0 0 0 5px;
+}
+
+.nav-bar .nav-right ul .sign-up {
+  margin: 10px 0 10px 10px;
+}
+
+.nav-bar .nav-right ul .sign-up a {
+  transition: background-color 1.5s;
+  transition: color 1.5s;
+}
+
+.nav-bar .nav-right ul .sign-up:hover a {
+  background-color: #30488f;
+  color: #ffffff;
+}
+
+.nav-bar .nav-right ul .sign-up a {
+  display: flex;
+  align-items: center;
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #30488f;
+  color: #ffffff;
+  background-color: #ffffff;
+  color: #30488f;
+}
+
+.nav-bar .nav-right ul .sign-up a img {
+  width: 18px;
+  height: 18px;
+  margin: 0 5px 0 0;
+}
+
+.nav-bar .nav-right ul .hamburger {
+  display: none;
+  font-size: 30px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #bdb5af;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar .nav-right ul li {
+    display: none;
+  }
+
+  .nav-bar .nav-right ul .hamburger {
+    display: inline-block;
+  }
+}
+
+.test {
+  margin: 10px 0;
   background-color: red;
 }
 

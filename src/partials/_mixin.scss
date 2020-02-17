@@ -1,4 +1,13 @@
+// mixin
 @mixin flex-init {
 	display: flex;
 	align-items: center;
+}
+
+@mixin button-init {
+	border: 1px solid $buttonColor;
+	border-radius: 5px;
+	padding: 10px;
+	background-color: $buttonColor;
+	color: #ffffff;
 }
