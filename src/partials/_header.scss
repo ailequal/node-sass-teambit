@@ -1,0 +1,32 @@
+// header
+.privacy-cookies {
+	background-color: $brandColor;
+	padding: 12px;
+	text-align: center;
+	font-size: 12px;
+	p {
+		display: inline-block;
+	}
+	a {
+		font-weight: 700;
+		color: $buttonColor;
+	}
+	span {
+		cursor: pointer;
+		font-weight: 700;
+		color: $buttonColor;
+	}
+}
+
+.nav-bar {
+	@include flex-init;
+	justify-content: space-between;
+	height: 35px;
+	margin: 20px 0;
+	.nav-right {
+		ul {
+			@include flex-init;
+			list-style: none;
+		}
+	}
+}
