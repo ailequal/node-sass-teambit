@@ -1,3 +1,3 @@
 # node-sass-teambit
 
-A replica of a website using SASS.
+A replica of https://teambit.io/ using SASS. Everything is compiled using Laravel Mix.
