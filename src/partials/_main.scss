@@ -1,4 +1,92 @@
 // main
+.jumbotron {
+	@include flex-init;
+	margin: 214px auto 100px auto;
+	.left {
+		h1 {
+			margin: 0 0 30px 0;
+			font-size: 50px;
+			line-height: 1.4;
+		}
+		p {
+			margin: 0 0 40px 0;
+			font-size: 22px;
+		}
+		.buttons {
+			margin: 0 0 30px 0;
+			font-size: 14px;
+			a {
+				@include button-init;
+				transition: background-color 1s;
+				&:hover {
+					background-color: $buttonColorDarker;
+				}
+				img {
+					width: 18px;
+					height: 18px;
+					vertical-align: middle;
+				}
+			}
+			span {
+				display: inline-block;
+				margin: 0 15px;
+			}
+		}
+	}
+	.right {
+		margin: 0 0 0 20px;
+		img {
+			width: 550px;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.jumbotron {
+		flex-direction: column;
+		text-align: center;
+		.left {
+			max-width: 680px;
+		}
+		.right {
+			margin: 0;
+			img {
+				max-width: 550px;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.jumbotron {
+		.left {
+			h1 {
+				line-height: 1.2;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.jumbotron {
+		.left {
+			.buttons {
+				a,
+				span {
+					display: block;
+				}
+				span {
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}
+
 .test {
 	margin: 10px 0;
 	background-color: red;
