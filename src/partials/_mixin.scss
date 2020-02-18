@@ -5,9 +5,9 @@
 }
 
 @mixin button-init {
-	border: 1px solid $buttonColor;
+	border: 1px solid $blueColor;
 	border-radius: 5px;
 	padding: 10px;
-	background-color: $buttonColor;
+	background-color: $blueColor;
 	color: #ffffff;
 }

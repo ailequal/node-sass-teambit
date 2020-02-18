@@ -16,12 +16,12 @@ header {
 		display: inline-block;
 		a {
 			font-weight: 700;
-			color: $buttonColor;
+			color: $blueColor;
 		}
 		span {
 			cursor: pointer;
 			font-weight: 700;
-			color: $buttonColor;
+			color: $blueColor;
 		}
 	}
 }
@@ -40,45 +40,70 @@ header {
 		}
 	}
 	.nav-right {
-		ul {
+		> ul {
 			@include flex-init;
 			list-style: none;
-			li {
+			> li {
 				margin: 10px;
-				a {
+				> a {
 					transition: color 1s;
 				}
-				&:hover a {
-					color: $buttonColor;
+				&:hover > a {
+					color: $blueColor;
 				}
 			}
 			.solutions {
-				a {
-					@include flex-init;
+				position: relative;
+				margin: 0;
+				padding: 10px;
+				> a {
 					i {
 						margin: 0 0 0 5px;
 					}
 				}
+				ul {
+					display: none;
+					position: absolute;
+					top: 35px;
+					left: 8px;
+					// border: 1px solid black;
+					box-shadow: 0px 0px 10px -2px rgba(31, 14, 31, 1);
+					border-radius: 5px;
+					list-style: none;
+					background-color: #ffffff;
+					li {
+						margin: 10px;
+						&:hover > a {
+							color: $blueColor;
+						}
+					}
+				}
+			}
+			.solutions:hover ul {
+				display: inline-block;
 			}
 			.sign-up {
 				margin: 10px 0 10px 10px;
-				a {
-					transition: background-color 1.5s;
-					transition: color 1.5s;
-				}
-				&:hover a {
-					background-color: $buttonColor;
-					color: #ffffff;
-				}
-				a {
-					@include flex-init;
+				> a {
 					@include button-init;
+					transition: all 0.6s;
 					background-color: #ffffff;
-					color: $buttonColor;
-					img {
+					color: $blueColor;
+					svg {
 						width: 18px;
 						height: 18px;
 						margin: 0 5px 0 0;
+						vertical-align: text-bottom;
+						.google_icon {
+							transition: all 0.6s;
+						}
+					}
+				}
+				&:hover > a {
+					background-color: $blueColor;
+					color: #ffffff;
+					.google_icon {
+						fill: #ffffff;
 					}
 				}
 			}

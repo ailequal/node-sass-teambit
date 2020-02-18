@@ -71,66 +71,93 @@ header {
   height: 35px;
 }
 
-.nav-bar .nav-right ul {
+.nav-bar .nav-right > ul {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-.nav-bar .nav-right ul li {
+.nav-bar .nav-right > ul > li {
   margin: 10px;
 }
 
-.nav-bar .nav-right ul li a {
+.nav-bar .nav-right > ul > li > a {
   transition: color 1s;
 }
 
-.nav-bar .nav-right ul li:hover a {
+.nav-bar .nav-right > ul > li:hover > a {
   color: #30488f;
 }
 
-.nav-bar .nav-right ul .solutions a {
-  display: flex;
-  align-items: center;
+.nav-bar .nav-right > ul .solutions {
+  position: relative;
+  margin: 0;
+  padding: 10px;
 }
 
-.nav-bar .nav-right ul .solutions a i {
+.nav-bar .nav-right > ul .solutions > a i {
   margin: 0 0 0 5px;
 }
 
-.nav-bar .nav-right ul .sign-up {
+.nav-bar .nav-right > ul .solutions ul {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 8px;
+  box-shadow: 0px 0px 10px -2px #1f0e1f;
+  border-radius: 5px;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.nav-bar .nav-right > ul .solutions ul li {
+  margin: 10px;
+}
+
+.nav-bar .nav-right > ul .solutions ul li:hover > a {
+  color: #30488f;
+}
+
+.nav-bar .nav-right > ul .solutions:hover ul {
+  display: inline-block;
+}
+
+.nav-bar .nav-right > ul .sign-up {
   margin: 10px 0 10px 10px;
 }
 
-.nav-bar .nav-right ul .sign-up a {
-  transition: background-color 1.5s;
-  transition: color 1.5s;
-}
-
-.nav-bar .nav-right ul .sign-up:hover a {
-  background-color: #30488f;
-  color: #ffffff;
-}
-
-.nav-bar .nav-right ul .sign-up a {
-  display: flex;
-  align-items: center;
+.nav-bar .nav-right > ul .sign-up > a {
   border: 1px solid #30488f;
   border-radius: 5px;
   padding: 10px;
   background-color: #30488f;
   color: #ffffff;
+  transition: all 0.6s;
   background-color: #ffffff;
   color: #30488f;
 }
 
-.nav-bar .nav-right ul .sign-up a img {
+.nav-bar .nav-right > ul .sign-up > a svg {
   width: 18px;
   height: 18px;
   margin: 0 5px 0 0;
+  vertical-align: text-bottom;
 }
 
-.nav-bar .nav-right ul .hamburger {
+.nav-bar .nav-right > ul .sign-up > a svg .google_icon {
+  transition: all 0.6s;
+}
+
+.nav-bar .nav-right > ul .sign-up:hover > a {
+  background-color: #30488f;
+  color: #ffffff;
+}
+
+.nav-bar .nav-right > ul .sign-up:hover > a .google_icon {
+  fill: #ffffff;
+}
+
+.nav-bar .nav-right > ul .hamburger {
   display: none;
   font-size: 30px;
 }
@@ -179,7 +206,7 @@ header {
   padding: 10px;
   background-color: #30488f;
   color: #ffffff;
-  transition: background-color 1s;
+  transition: background-color 0.6s;
 }
 
 .jumbotron .left .buttons a:hover {
@@ -189,6 +216,7 @@ header {
 .jumbotron .left .buttons a img {
   width: 18px;
   height: 18px;
+  margin: 0 10px 0 0;
   vertical-align: middle;
 }
 
