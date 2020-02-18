@@ -11,3 +11,15 @@
 	background-color: $blueColor;
 	color: #ffffff;
 }
+
+@mixin position-fixed-init($top, $left) {
+	position: fixed;
+	top: $top;
+	left: $left;
+}
+
+@mixin position-absolute-init($top, $left) {
+	position: absolute;
+	top: $top;
+	left: $left;
+}
