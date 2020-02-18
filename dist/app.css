@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #bdb5af;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -162,12 +168,6 @@ header {
   font-size: 30px;
 }
 
-.line {
-  width: 100%;
-  height: 2px;
-  background-color: #bdb5af;
-}
-
 @media screen and (max-width: 768px) {
   .nav-bar .nav-right ul li {
     display: none;
@@ -245,6 +245,11 @@ header {
   font-size: 26px;
 }
 
+.four-layout .container h3 {
+  padding: 0 0 60px 0;
+  font-size: 26px;
+}
+
 .four-layout .container > div {
   display: flex;
   align-items: center;
@@ -312,12 +317,7 @@ header {
     margin: 30px 20px;
   }
 
-  .four-layout .container > div .wrapper img {
-    width: 140px;
-  }
-
   .four-layout .container > img {
-    margin: 0;
     margin: 30px 0 40px 0;
   }
 }
