@@ -1,0 +1,103 @@
+@media screen and (max-width: 1200px) {
+	.jumbotron {
+		flex-direction: column;
+		text-align: center;
+		.left {
+			max-width: 680px;
+		}
+		.right {
+			margin: 0;
+			img {
+				max-width: 550px;
+				width: 100%;
+			}
+		}
+	}
+
+	.two-item {
+		display: block;
+		text-align: center;
+		// padding: 60px 0 30px 0;
+		.img-info {
+			img {
+				// max-width: 700px;
+			}
+		}
+		.text-info {
+			h3 {
+				max-width: 420px;
+				margin: 30px auto;
+				padding: 0 20px;
+				font-size: 26px;
+				line-height: 1.4;
+			}
+			p {
+				max-width: 420px;
+				margin: auto;
+				padding: 0 20px;
+				font-size: 22px;
+				line-height: 1.4;
+			}
+			a {
+				display: block;
+				margin: 40px 0;
+				font-size: 22px;
+				color: $blueColor;
+			}
+			img {
+				max-width: 240px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.four-layout {
+		.container > div {
+			.wrapper {
+				margin: 20px 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.jumbotron {
+		.left {
+			h1 {
+				line-height: 1.2;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+
+	.four-layout {
+		.container > div {
+			display: block;
+			.wrapper {
+				margin: 30px 20px;
+			}
+		}
+		.container > img {
+			margin: 30px 0 40px 0;
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.jumbotron {
+		.left {
+			.buttons {
+				a,
+				span {
+					display: block;
+				}
+				span {
+					margin: 10px 0;
+				}
+			}
+		}
+	}
+}

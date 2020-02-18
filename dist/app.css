@@ -22,6 +22,14 @@ a {
   background-color: #bdb5af;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
 .container {
   max-width: 1200px;
   width: 90%;
@@ -30,6 +38,12 @@ a {
 
 .container-full {
   width: 100%;
+}
+
+.container-two {
+  max-width: 1600px;
+  width: 90%;
+  margin: auto;
 }
 
 header {
@@ -276,6 +290,46 @@ header {
   margin: 40px 20px 60px 20px;
 }
 
+.two-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 0 30px 0;
+}
+
+.two-item .img-info img {
+  max-width: 750px;
+  width: 100%;
+}
+
+.two-item .text-info {
+  margin: 0 60px;
+}
+
+.two-item .text-info h3 {
+  max-width: 420px;
+  margin: 0 0 30px 0;
+  font-size: 26px;
+  line-height: 1.4;
+}
+
+.two-item .text-info p {
+  max-width: 420px;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.two-item .text-info a {
+  display: block;
+  margin: 40px 0;
+  font-size: 22px;
+  color: #30488f;
+}
+
+.two-item .text-info img {
+  max-width: 270px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .jumbotron {
     flex-direction: column;
@@ -293,6 +347,38 @@ header {
   .jumbotron .right img {
     max-width: 550px;
     width: 100%;
+  }
+
+  .two-item {
+    display: block;
+    text-align: center;
+  }
+
+  .two-item .text-info h3 {
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .two-item .text-info p {
+    max-width: 420px;
+    margin: auto;
+    padding: 0 20px;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .two-item .text-info a {
+    display: block;
+    margin: 40px 0;
+    font-size: 22px;
+    color: #30488f;
+  }
+
+  .two-item .text-info img {
+    max-width: 240px;
   }
 }
 
