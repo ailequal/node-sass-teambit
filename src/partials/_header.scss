@@ -79,6 +79,7 @@ header {
 			}
 			.sign-up {
 				margin: 10px 0 10px 10px;
+				margin: 0 0 0 10px;
 				> a {
 					@include button-init;
 					transition: all 0.6s;
@@ -88,7 +89,7 @@ header {
 						width: 18px;
 						height: 18px;
 						margin: 0 5px 0 0;
-						vertical-align: text-bottom;
+						vertical-align: middle;
 						.google_icon {
 							transition: all 0.6s;
 						}
