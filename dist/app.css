@@ -330,6 +330,56 @@ header {
   width: 100%;
 }
 
+.testimonial {
+  background-color: #ffe7d2;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.testimonial h2 {
+  font-size: 40px;
+  line-height: 1.4;
+}
+
+.testimonial .wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+  border: 1px solid #bdb5af;
+  border-radius: 5px;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.testimonial .wrapper p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+.testimonial .wrapper .signatures {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial .wrapper .signatures img {
+  width: 38px;
+  margin: 0 15px 0 0;
+}
+
+.testimonial .wrapper .signatures span {
+  display: block;
+}
+
+.testimonial .wrapper .signatures .names {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #30488f;
+}
+
+.testimonial .wrapper .signatures .job {
+  font-size: 12px;
+}
+
 @media screen and (max-width: 1200px) {
   .jumbotron {
     flex-direction: column;

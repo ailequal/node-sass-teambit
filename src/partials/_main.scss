@@ -113,3 +113,44 @@
 		}
 	}
 }
+
+.testimonial {
+	background-color: $brandColor;
+	padding: 60px 0 40px 0;
+	text-align: center;
+	h2 {
+		font-size: 40px;
+		line-height: 1.4;
+	}
+	.wrapper {
+		max-width: 600px;
+		margin: 40px auto;
+		border: 1px solid #bdb5af;
+		border-radius: 5px;
+		padding: 20px 40px;
+		background-color: #ffffff;
+		text-align: left;
+		p {
+			margin: 0 0 20px;
+			line-height: 1.5;
+		}
+		.signatures {
+			@include flex-init;
+			img {
+				width: 38px;
+				margin: 0 15px 0 0;
+			}
+			span {
+				display: block;
+			}
+			.names {
+				margin: 0 0 5px 0;
+				font-size: 14px;
+				color: $blueColor;
+			}
+			.job {
+				font-size: 12px;
+			}
+		}
+	}
+}
