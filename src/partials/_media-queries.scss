@@ -44,6 +44,25 @@
 			}
 		}
 	}
+
+	.bottom {
+		display: block;
+		.mission {
+			margin: 0 0 30px 0;
+			h3 {
+				max-width: none;
+			}
+		}
+		.site-map {
+			flex-wrap: wrap;
+			.site-section {
+				flex-basis: 50%;
+				max-width: none;
+				width: auto;
+				margin: 20px 0 0 0;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -117,6 +136,14 @@
 			}
 			span {
 				margin: 10px 0;
+			}
+		}
+	}
+
+	.bottom {
+		.site-map {
+			.site-section {
+				flex-basis: 100%;
 			}
 		}
 	}

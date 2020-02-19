@@ -1,0 +1,61 @@
+// footer
+.bottom {
+	display: flex;
+	margin: 60px auto;
+	justify-content: space-between;
+	.mission {
+		display: flex;
+		img {
+			width: 50px;
+			height: 50px;
+			margin: 0 20px 0 0;
+		}
+		h3 {
+			max-width: 300px;
+			width: 100%;
+			font-size: 18px;
+			a {
+				color: $blueColor;
+			}
+		}
+	}
+	.site-map {
+		display: flex;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 0 0 30px;
+		justify-content: space-between;
+		.site-section {
+			max-width: 140px;
+			width: 100%;
+			h4 {
+				font-size: 18px;
+				font-weight: 700;
+				margin: 0 0 15px 0;
+			}
+			ul {
+				list-style: none;
+				li {
+					margin: 0 0 10px 0;
+					a {
+						font-size: 14px;
+						&:hover {
+							color: $blueColor;
+						}
+					}
+				}
+			}
+		}
+		.product {
+			// flex-basis: 50%;
+		}
+		.from-the-blog {
+			h4 {
+				margin: 0 0 7px 0;
+			}
+			a {
+				line-height: 2.2;
+			}
+		}
+	}
+}
