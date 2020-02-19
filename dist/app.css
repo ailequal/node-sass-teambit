@@ -293,7 +293,7 @@ header {
 .two-item {
   display: flex;
   align-items: flex-start;
-  padding: 60px 0 30px 0;
+  padding: 60px 0;
 }
 
 .two-item .img-info img {
@@ -354,8 +354,12 @@ header {
     text-align: center;
   }
 
+  .two-item .text-info {
+    margin: 0;
+  }
+
   .two-item .text-info h3 {
-    max-width: 420px;
+    max-width: 620px;
     margin: 30px auto;
     padding: 0 20px;
     font-size: 26px;
@@ -363,7 +367,7 @@ header {
   }
 
   .two-item .text-info p {
-    max-width: 420px;
+    max-width: 620px;
     margin: auto;
     padding: 0 20px;
     font-size: 22px;
