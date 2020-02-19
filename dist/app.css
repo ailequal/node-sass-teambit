@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,6 +54,7 @@ header {
   left: 0;
   width: 100%;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .privacy-cookies {
@@ -183,16 +186,6 @@ header {
   font-size: 30px;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-bar .nav-right ul li {
-    display: none;
-  }
-
-  .nav-bar .nav-right ul .hamburger {
-    display: inline-block;
-  }
-}
-
 .jumbotron {
   display: flex;
   align-items: center;
@@ -206,16 +199,16 @@ header {
 }
 
 .jumbotron .left p {
-  margin: 0 0 40px 0;
   font-size: 22px;
 }
 
 .jumbotron .left .buttons {
-  margin: 0 0 30px 0;
+  margin: 30px 0;
+  padding: 10px 0;
   font-size: 14px;
 }
 
-.jumbotron .left .buttons a {
+.jumbotron .left .buttons .button {
   border: 1px solid #30488f;
   border-radius: 5px;
   padding: 10px;
@@ -224,11 +217,11 @@ header {
   transition: background-color 0.6s;
 }
 
-.jumbotron .left .buttons a:hover {
+.jumbotron .left .buttons .button:hover {
   background-color: #233569;
 }
 
-.jumbotron .left .buttons a img {
+.jumbotron .left .buttons .button img {
   width: 18px;
   height: 18px;
   margin: 0 10px 0 0;
@@ -238,6 +231,11 @@ header {
 .jumbotron .left .buttons span {
   display: inline-block;
   margin: 0 15px;
+}
+
+.jumbotron .left .buttons .email {
+  display: block;
+  margin: 30px 0 0 0;
 }
 
 .jumbotron .right {
@@ -342,6 +340,7 @@ header {
 }
 
 .testimonial .wrapper {
+  position: relative;
   max-width: 600px;
   margin: 40px auto;
   border: 1px solid #bdb5af;
@@ -349,6 +348,17 @@ header {
   padding: 20px 40px;
   background-color: #ffffff;
   text-align: left;
+}
+
+.testimonial .wrapper::before {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  content: "\F10D";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  z-index: 0;
 }
 
 .testimonial .wrapper p {
@@ -378,6 +388,42 @@ header {
 
 .testimonial .wrapper .signatures .job {
   font-size: 12px;
+}
+
+.testimonial .buttons {
+  margin: 30px 0;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.testimonial .buttons .button {
+  border: 1px solid #30488f;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #30488f;
+  color: #ffffff;
+  transition: background-color 0.6s;
+}
+
+.testimonial .buttons .button:hover {
+  background-color: #233569;
+}
+
+.testimonial .buttons .button img {
+  width: 18px;
+  height: 18px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+
+.testimonial .buttons span {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.testimonial .buttons .email {
+  display: block;
+  margin: 30px 0 0 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -443,6 +489,14 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .nav-bar .nav-right ul li {
+    display: none;
+  }
+
+  .nav-bar .nav-right ul .hamburger {
+    display: inline-block;
+  }
+
   .jumbotron .left h1 {
     line-height: 1.2;
   }
@@ -471,6 +525,15 @@ header {
   }
 
   .jumbotron .left .buttons span {
+    margin: 10px 0;
+  }
+
+  .testimonial .buttons a,
+  .testimonial .buttons span {
+    display: block;
+  }
+
+  .testimonial .buttons span {
     margin: 10px 0;
   }
 }

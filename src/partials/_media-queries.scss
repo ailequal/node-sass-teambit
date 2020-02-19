@@ -57,6 +57,19 @@
 }
 
 @media screen and (max-width: 768px) {
+	.nav-bar {
+		.nav-right {
+			ul {
+				li {
+					display: none;
+				}
+				.hamburger {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
 	.jumbotron {
 		.left {
 			h1 {
@@ -92,6 +105,18 @@
 				span {
 					margin: 10px 0;
 				}
+			}
+		}
+	}
+
+	.testimonial {
+		.buttons {
+			a,
+			span {
+				display: block;
+			}
+			span {
+				margin: 10px 0;
 			}
 		}
 	}

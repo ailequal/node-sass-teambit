@@ -9,13 +9,14 @@
 			line-height: 1.4;
 		}
 		p {
-			margin: 0 0 40px 0;
+			// margin: 0 0 40px 0;
 			font-size: 22px;
 		}
 		.buttons {
-			margin: 0 0 30px 0;
+			margin: 30px 0;
+			padding: 10px 0;
 			font-size: 14px;
-			a {
+			.button {
 				@include button-init;
 				transition: background-color 0.6s;
 				&:hover {
@@ -31,6 +32,10 @@
 			span {
 				display: inline-block;
 				margin: 0 15px;
+			}
+			.email {
+				display: block;
+				margin: 30px 0 0 0;
 			}
 		}
 	}
@@ -123,6 +128,7 @@
 		line-height: 1.4;
 	}
 	.wrapper {
+		position: relative;
 		max-width: 600px;
 		margin: 40px auto;
 		border: 1px solid #bdb5af;
@@ -130,6 +136,16 @@
 		padding: 20px 40px;
 		background-color: #ffffff;
 		text-align: left;
+		&::before {
+			position: absolute;
+			top: -20px;
+			left: 0px;
+			content: "\f10d";
+			font-family: "Font Awesome 5 Free";
+			font-weight: 900;
+			font-size: 40px;
+			z-index: 0;
+		}
 		p {
 			margin: 0 0 20px;
 			line-height: 1.5;
@@ -151,6 +167,32 @@
 			.job {
 				font-size: 12px;
 			}
+		}
+	}
+	.buttons {
+		margin: 30px 0;
+		padding: 10px 0;
+		font-size: 14px;
+		.button {
+			@include button-init;
+			transition: background-color 0.6s;
+			&:hover {
+				background-color: $blueDarkerColor;
+			}
+			img {
+				width: 18px;
+				height: 18px;
+				margin: 0 10px 0 0;
+				vertical-align: middle;
+			}
+		}
+		span {
+			display: inline-block;
+			margin: 0 15px;
+		}
+		.email {
+			display: block;
+			margin: 30px 0 0 0;
 		}
 	}
 }

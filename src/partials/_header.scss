@@ -3,6 +3,7 @@ header {
 	@include position-fixed-init(0, 0);
 	width: 100%;
 	background-color: #ffffff;
+	z-index: 1;
 }
 
 .privacy-cookies {
@@ -106,21 +107,6 @@ header {
 			.hamburger {
 				display: none;
 				font-size: 30px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.nav-bar {
-		.nav-right {
-			ul {
-				li {
-					display: none;
-				}
-				.hamburger {
-					display: inline-block;
-				}
 			}
 		}
 	}
